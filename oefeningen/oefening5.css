@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+main{
+    width: 80rem;
+    margin: 4rem auto;
+}
+main h1{
+    color: #E4512;
+}
+
+main #main__bicycle1, main__mainbicycle2{
+    display: flex;
+    align-items: center;
+}
+main #main__bicycle1 #main__bicycle1__text h2, main__mainbicycle2{
+    background-color: #111;
+    color: #fff;
+    padding: 0.5rem;
+    margin: 1rem 0;
+}
+
+main main main{
+    margin-bottom: 1rem;
+}
+
+main main main{
+    list-style-position: inside;
+}
+
+/*Namen enzo nog aanpassen (bo vragen)*/
+main main main main{
+    padding: 0.5rem 0;
+    font-weight: bold;
+}
+
+
+
+
+main #main__sales-outlet{
+    display: flex;
+    justify-content: space-between;
+}
+main #main__sales-outlet .main__sales_-outlet__bicycles h2{
+    background-color: #111;
+    color: #fff;
+    padding: 0.5rem;
+    margin: 1rem 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+footer{
+    background-color: #111;
+    padding: 2rem 0;
+}
+
+footer #footer__container{
+    width: 80rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer #footer__container #footer__container__maps{
+    width: 50%;
+}
+footer #footer__container #footer__container__maps iframe{
+    width: 100%;
+    height: 20rem;
+}
+
+footer #footer__container #footer__container__contact{
+    text-align: right;
+    width: 50%;
+}
+footer #footer__container #footer__container__contact h1{
+    color: #E40515;
+    margin-bottom: 1rem;
+}
+footer #footer__container #footer__container__contact p{
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+footer #footer__container #footer__container__contact p a{
+    color: #fff;
+}
+div#topknop{
+    background-color: #E40515;
+    padding: 1.5rem 2rem;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+}
+div#topknop a{
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 81rem) {
+    aside{
+        display: none;
+    }
+    nav #nav_container{
+        width: 100%;
+        margin: 0;
+        padding: 1rem 2rem;
+    }
+    header #header__container{
+        width: 100%;
+        height: 20rem;
+        padding: 2rem;
+    }
+    header #header__container h1{
+        font-size: 2.5rem;
+    }
+    main {
+        width: 100%;
+        margin: 4rem 0;
+        padding: 0 2rem;
+    }
+    main h1{
+        text-align: center;
+    }
+    main #main__bicycle1, main #main__bycicle2{
+        flex-direction: column;
+    }
+    main #main__bicycle1 #main_bicycle__text{
+        order: 1;
+    }
+    main #main__bicycle1 img{
+        order: 2;
+    }
+    main #main__sales-outlet{
+        flex-direction: column;
+        text-align: center;
+    }
+    footer #footer__container{
+        width: 100%;
+        margin: 0;
+        flex-direction: column;
+        text-align: center;
+    }
+    footer #footer__container #footer__container__contact, footer #footer__container #footer__container__maps{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+}

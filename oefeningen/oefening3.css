@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+/*we hebben alles in deze div gezet zodat die bij ultrawidescreen max
+zo groot kan worden, dit gaan we ook moeten doen op examen en portfolio*/
+div#container{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 50px;
+    width: 100%;
+    text-align: center;
+    background-color: #4ed6ff;
+}
+
+header h1 {
+    font-family: "Schoolbell", sans-serif;
+    color: #1F272A;
+}
+
+header h1 span {
+    font-family: "Schoolbell", sans-serif;
+    color: #3386A7;
+}
+
+header p {
+    font-style: italic;
+}
+
+nav {
+    background-color: #343A40;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center; /*dat die knoppen in midden staan*/
+    list-style-type: none;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 20px 40px;
+    color: #f1f1f1;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #f1f1f1;
+    color: #343A40;
+}
+
+nav ul li a.active {
+    background-color: #f1f1f1;
+    color: #343A40;
+}
+
+main {
+    width: 100%;
+    display: flex;
+}
+
+main section {
+    width: 75%;
+    padding: 20px;
+}
+
+main aside {
+    width: 25%;
+    background-color: #dddd;
+    padding: 20px;
+}
+
+
+main section h2, main aside h2 {
+    font-family: "Schoolbell", cursive;
+    margin-bottom: 15px;
+}
+
+main section img {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+main section p, main aside p {
+    margin-bottom: 15px;
+}
+
+footer {
+    background-color: #343A40;
+    color: #f1f1f1;
+    text-align: center;
+    padding: 20px;
+}
+
+@media screen and (max-width: 700px) {
+    main {
+        flex-direction: column;
+    }
+
+    main section, main aside {
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li a {
+        display: block;
+        text-align: center;
+    }
+
+}
+
+
+/*
+
+
+
+
+header, nav, main, footer{
+    width: 100%;
+}
+
+header{
+    text-align: center;
+    background-color: #3386A7;
+}
+header h1, header span{
+    font-family: "Schoolbell", sans-serif;
+    padding: 30px 0;
+}
+
+header h1 span{
+    color: #1E90FF;
+}
+header p{
+    font-style: italic;
+    padding-bottom: 100px;
+}
+
+nav{
+    font-family: "Segoe UI", sans-serif;
+    background-color: #1F272A;
+    color: #F1F1F1;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    text-align:center;
+    margin: 0 auto;
+}
+
+nav ul li{
+    padding: 20px;
+}
+
+nav ul li:hover{
+    background-color: #DDDDDD;
+    color: #343A40;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    /*align-items: center;*/
+/*}*/
+
+/*
+main article{
+    padding: 50px 25px;
+}
+
+main article:nth-child(2){
+    padding-right: 110px;
+}
+
+main article h3{
+    font-family: "Schoolbell", sans-serif;
+}
+
+main article img{
+    padding: 25px 0;
+}
+
+main article:nth-child(2) p:nth-child(1){
+    font-weight: bold;
+}
+
+main article:nth-child(2){
+    background-color: #DDDDDD;
+}
+
+main article:nth-child(1) p a{
+    color: #000;
+}
+
+footer p{
+    background-color: #1F272A;
+    color: #DDDDDD;
+    text-align: center;
+    padding: 20px;
+}
+
+@media screen and (max-width: 700px){
+    header {
+        padding-bottom: 100px;
+    }
+    nav ul{
+        width: 100%;
+        background-color: #1F272A;
+        display: flex;
+        flex-direction: column;
+    }
+}
+*/
